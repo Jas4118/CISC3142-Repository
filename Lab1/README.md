@@ -1,0 +1,1 @@
+<h1 align="center">Lab 1 - Reading Data with C++</h1>
