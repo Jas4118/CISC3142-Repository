@@ -1,0 +1,24 @@
+SKU	Brand	Category		Year	Price
+111	ABC	   A				2000	0.5
+112	ABC	   B				2010	0.5
+113	ABC	   C				2020	0.5
+211	ABC	   A				2000	1.5
+212	ABC	   B				2010	1.5
+213	ABC	   C				2020	1.5
+321	XYZ	   A				2020	1
+322	XYZ	   A				2020	2
+323	XYZ	   A				2020	3
+
+Brand	Average
+ABC		1
+XYZ		2
+
+Category	Average
+A			1.6
+B			1
+C			1
+
+Year	SKU's
+2000	111 211 (Count: 2)
+2010	112 212 (Count: 2)
+2020	113 213 321 322 323 (Count: 5)
