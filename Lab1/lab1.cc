@@ -29,7 +29,7 @@ void replace(string &line, char at, char with)
   }
 }
 
-void calculateAveragePerBrand(vector<string> vBrand, vector<float> vPrice, ofstream &out_stream)
+void calculateBrandAverage(vector<string> vBrand, vector<float> vPrice, ofstream &out_stream)
 { // Calculates the average price per brand
   map<string, vector<float>> brandMap;
 
@@ -55,7 +55,7 @@ void calculateAveragePerBrand(vector<string> vBrand, vector<float> vPrice, ofstr
   out_stream << endl;
 }
 
-void calculateAveragePerCategory(vector<string> vCategory, vector<float> vPrice, ofstream &out_stream)
+void calculateCategoryAverage(vector<string> vCategory, vector<float> vPrice, ofstream &out_stream)
 { // Calculates the average price per category
   map<string, vector<float>> categoryMap;
 
@@ -81,7 +81,7 @@ void calculateAveragePerCategory(vector<string> vCategory, vector<float> vPrice,
   out_stream << endl;
 }
 
-void calculateSKUCount(vector<int> vYear, vector<int> vSKU, ofstream &out_stream)
+void calculateSKU(vector<int> vYear, vector<int> vSKU, ofstream &out_stream)
 {
   map<int, vector<int>> yearMap;
 
@@ -188,12 +188,11 @@ int main()
   out_stream << endl;
 
 
-  calculateAveragePerBrand(vBrand, vPrice, out_stream);
+  calculateBrandAverage(vBrand, vPrice, out_stream);
 
+  calculateCategoryAverage(vCategory, vPrice, out_stream);
 
-  calculateAveragePerCategory(vCategory, vPrice, out_stream);
-
-  calculateSKUCount(vYear, vSKU, out_stream);
+  calculateSKU(vYear, vSKU, out_stream);
 
   in_stream.close();
   out_stream.close();
