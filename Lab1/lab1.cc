@@ -72,8 +72,8 @@ void calculateAveragePerCategory(vector<string> vCategory, vector<float> vPrice,
   {
     string curCategory = it->first;
     vector<float> curPrices = it->second;
-    float brandSum = accumulate(curPrices.begin(), curPrices.end(), 0.0);
-    float average = brandSum / curPrices.size();
+    float categorySum = accumulate(curPrices.begin(), curPrices.end(), 0.0);
+    float average = categorySum / curPrices.size();
 
     out_stream << curCategory << "\t\t\t" << average << "\n";
   }
