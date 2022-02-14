@@ -20,7 +20,7 @@ void replace(string &line, char at, char with)
 
 void calculateBrandAverage(vector<string> vBrand, vector<float> vPrice, ofstream &out_stream)
 { // Calculates the average price per brand
-  map<string, vector<float>> brandMap;
+  map<string, vector<float> > brandMap;
 
   for (int i = 0; i < vBrand.size(); i++)
   {
@@ -29,7 +29,7 @@ void calculateBrandAverage(vector<string> vBrand, vector<float> vPrice, ofstream
 
   out_stream << "Brand\tAverage\n";
 
-  map<string, vector<float>>::iterator it;
+  map<string, vector<float> >::iterator it;
 
   for (it = brandMap.begin(); it != brandMap.end(); it++)
   {
@@ -46,7 +46,7 @@ void calculateBrandAverage(vector<string> vBrand, vector<float> vPrice, ofstream
 
 void calculateCategoryAverage(vector<string> vCategory, vector<float> vPrice, ofstream &out_stream)
 { // Calculates the average price per category
-  map<string, vector<float>> categoryMap;
+  map<string, vector<float> > categoryMap;
 
   for (int i = 0; i < vCategory.size(); i++)
   {
@@ -55,7 +55,7 @@ void calculateCategoryAverage(vector<string> vCategory, vector<float> vPrice, of
 
   out_stream << "Category\tAverage\n";
 
-  map<string, vector<float>>::iterator it;
+  map<string, vector<float> >::iterator it;
 
   for (it = categoryMap.begin(); it != categoryMap.end(); it++)
   {
@@ -72,7 +72,7 @@ void calculateCategoryAverage(vector<string> vCategory, vector<float> vPrice, of
 
 void calculateSKU(vector<int> vYear, vector<int> vSKU, ofstream &out_stream)
 {
-  map<int, vector<int>> yearMap;
+  map<int, vector<int> > yearMap;
 
   for (int i = 0; i < vYear.size(); i++)
   {
@@ -81,7 +81,7 @@ void calculateSKU(vector<int> vYear, vector<int> vSKU, ofstream &out_stream)
 
   out_stream << "Year\tSKU's\n";
 
-  map<int, vector<int>>::iterator it;
+  map<int, vector<int> >::iterator it;
 
   for (it = yearMap.begin(); it != yearMap.end(); it++)
   {
