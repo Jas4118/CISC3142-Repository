@@ -10,4 +10,4 @@
 
 <p>This problem requires many data structures to solve. The main ones I have used include maps and vectors. When a user runs the software, the program puts all of the input information in vectors of varying datatypes. The vectors are filled until there is no input left. To calculate the price per brand and price per category, the program utilizes maps with a key and value. The map stores a key with the brand and category and stores the prices as the value as a vector. Each price is pushed into the value vector until all of the necessary data is processed. Then, using the information in the map, the categories and prices are saved to the output file and the sum and averages are computed. Finally, the data is neatly saved and formatted in the output file.
 
-I have indepth, hand drawn trace documents showcasing each important function and the final output final. You can find them in this directory. </p>
+I have included indepth trace documents showcasing each important function and the final output final. You can find the documents in this directory named "Lab 1 Trace PDF." </p>
