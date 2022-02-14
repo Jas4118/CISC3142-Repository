@@ -1,14 +1,3 @@
-// This file shows basic functions of reading in a CSV file using C++98
-// Please add your name to your code!
-
-/* Homework Objective: fix this program to match the requirements listed:
-  1. successfully reads all lines of the input file
-  2. calculate the average price per brand, average price per category
-  3. writes to an output file
-  4. for each unique year, list the count of skus and also print out the skus as a list i.e. 2000 (3): 111, 211, 311 and make a new line per year.
-All programs must be able to compile in C++98 standard (the default version on Linux Machine). That means you cannot use the new features of C++11! :(
-*/
-
 #include <iostream>
 #include <iterator>
 #include <fstream>
