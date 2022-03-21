@@ -176,7 +176,7 @@ int main()
 
     string expression;
 
-    cout << "The supported operations are parentheses, addition, subtraction, multiplication, division, and exponents/square root (do x ^ (1/2) for square root).\n";
+    cout << "\nThe supported operations are parentheses, addition, subtraction, multiplication, division, and exponents/square root (do x ^ (1/2) for square root).\n";
     cout << "If you would like to quit, type 'quit' in all lowercase.\n";
 
     while (true)
